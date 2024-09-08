@@ -150,17 +150,18 @@ const ExpenseForm = () => {
               fullWidth
             />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Button
               type="submit"
               variant="contained"
               color="primary"
-              fullWidth
-              sx={{ mt: 2 }}
+              size="medium"
+              sx={{ mt: 2, px: 3 }}
             >
               Add Expense
             </Button>
           </Grid>
+
         </Grid>
       </Box>
 
