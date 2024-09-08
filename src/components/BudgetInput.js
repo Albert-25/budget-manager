@@ -19,12 +19,18 @@ const BudgetInput = () => {
         type="number"
         value={budget}
         onChange={(e) => setBudgetAmount(e.target.value)}
-        label="Enter your budget"
+        label="Define your budget"
         variant="outlined"
-        sx={{ mr: 2 }}
+        size="small" 
+        sx={{ mr: 2, width: '200px' }} 
         required
       />
-      <Button type="submit" variant="contained" color="primary">
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        sx={{ height: '40px' }} 
+      >
         Set Budget
       </Button>
     </Box>
